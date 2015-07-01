@@ -6,6 +6,7 @@ class StudentsController < ApplicationController
 
   def show
     @student = Student.find(params[:id])
+    @projects = Project.order(params[:sort])
     render :show
   end
 

@@ -9,6 +9,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'bootstrap-sass'
 gem 'textacular'
+gem 'pry'
 
 
 group :development do

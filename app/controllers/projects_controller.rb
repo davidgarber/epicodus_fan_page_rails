@@ -1,4 +1,9 @@
 class ProjectsController < ApplicationController
+  def index
+    @projects = Project.order(params[:sort])
+    render :index
+  end
+
   def new
     @student = Student.find(params[:student_id])
     @project = @student.projects.new

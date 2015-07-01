@@ -13,8 +13,11 @@
                                                 :method => "delete"} %>
       </li>
 
+
     <% end %>
   </ul>
+
+  <%= link_to "Sort by Name", student_path(@student, :sort => "title") %>  <hr>
 <% else %>
   <p>There are no projects yet!</p>
 <% end %>
