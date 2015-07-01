@@ -13,3 +13,17 @@
  *= require_tree .
  *= require_self
  */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+  background: url("http://static1.squarespace.com/static/5524448ee4b0d6f6b83ab9e2/t/5554e40ce4b07a51644cd9ba/1431626828084/IMG_0803.jpg?format=750w") no-repeat  center fixed;
+  background-size: cover;
+}
+
+.container.page-wrapper {
+  margin-top: 25px;
+  padding-bottom: 20px;
+  background: rgba(255, 255, 255, .5);
+}
