@@ -1,6 +1,6 @@
 class StudentsController < ApplicationController
   def index
-    @students = Student.all
+    @students = Student.order(params[:sort])
     render :index
   end
 
@@ -22,6 +22,10 @@ class StudentsController < ApplicationController
       render :edit
     end
   end
+
+  # def search(searchTerm)
+  #   result = Student.basic_search(searchTerm)
+
 
   def new
     @student = Student.new

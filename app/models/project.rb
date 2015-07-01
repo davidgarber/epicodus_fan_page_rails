@@ -1,4 +1,6 @@
-class Project < ActiveRecord::Base
+require 'textacular'
+
+class Project < ActiveRecord::Base.extend(Textacular)
   belongs_to :student
 
   validates :title, :presence => true
